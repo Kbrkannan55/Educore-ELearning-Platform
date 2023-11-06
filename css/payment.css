@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap');
+body{
+	font-family : 'Lato'
+}
+
+header{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 19px;
+    background-color: #232946;
+    position: relative;
+}
+
+.logo{
+    float: left;
+    margin-left: 100px;
+}
+
+.logo h2{
+    color: #fff;
+    font-weight: 700;
+}
+
+nav img{
+    height: 35px;
+    width: 35px;
+}
+
+nav input[type="search"]{
+    height:2rem;
+    border:none;
+    background: #B8C1EC;
+    padding:0.1rem;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 9px 25px;
+    font-size: larger;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.serch{
+    background:#B8C1EC;
+    padding:8px;
+    border: none;
+}
+
+.toggle-btn{
+    width: 35px;
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+
+}
+
+.toggle-btn span{
+    float: left;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 991px) {
+    .toggle-btn{
+        display: block;
+    }
+    nav{
+        display: none;
+        width:100%;
+        border-top: 2px solid #000;
+        padding-top: 15px;
+        margin-top: 30px;
+
+    
+    }
+    nav ul li{
+        padding: 15px 0px;
+        width: 100%;
+    }
+    nav.show{
+        display:block;
+    }
+
+    
+}
+
+footer{
+	width : 100%;
+}
+a{
+	text-decoration : none;
+	color : #bbc1ec;
+}
+a:hover{
+	text-decoration : none;
+	color : #bbc1ec;
+}
+div{
+	margin-top : 1em;
+}
+.upper_container{
+	display: flex;
+	flex-direction : row;
+}
+.payment_container{
+	display : flex;
+	flex-direction : column;
+	align-items : flex-start;
+	width : fit-content;
+	border : 2px solid black;
+	padding : 3em;
+	margin-left :12vw;
+	margin-bottom : 2em;
+}
+.options{
+	display  :flex;
+	flex-direction : row;
+	align-items : center;
+}
+.extra{
+    display : flex;
+    width :10em;
+    background :#B8C1EC; 
+    justify-content: center;
+}
+.card{
+	display : flex;
+	flex-direction : column;
+	border : 1px solid #ffffff;
+	width : 20vw;
+
+}
+.in_card{
+	display : flex;
+	flex-direction : row;
+	align-items : center;
+	justify-content : space-between;
+}
+#inputs{
+	width : 100%;
+	background : white;
+}
+.expiry{
+	display : flex;
+	flex-direction : row;
+}
+.in_expiry{
+	display : flex;
+	flex-direction : column;
+}
+.payment_options{
+	display : flex;
+	flex-direction : row;
+	align-items : center;
+	margin-top : -1em;
+}
+.monthly_special{
+	display  :flex;
+	flex-direction : column;
+	
+}
+.privileges{
+	padding : 3em;
+	display : flex;
+	flex-direction : column;
+	justify-content : flex-start;
+	align-items : flex-start;
+}
+h3{
+	display : flex;
+	justify-content : flex-start;
+}
+.privileges_options{
+	display : flex;
+	flex-direction : row;
+	justify-content : space-between;
+	
+}
+.image_text{
+	display : flex;
+	flex-direction : column;
+	background :  #bbc1ec;
+	width : fit-content;
+	justify-content: center;
+	align-items : center;
+	padding : 2em;
+}
+.options_text{
+font-size : 1.5em;margin-top : 2em; margin-left : 2em;width : 30vw;height : 10vh;
+}
+
+@media(max-width : 410px){
+	
+	.upper_container{
+		display : flex;
+		flex-direction : column;
+	}
+	.payment_container{
+		width : 100%;
+		margin-left : 0;
+		margin-right : 1em;
+		margin-top : 1em;
+	}
+	.card{
+		width : 90%;
+		
+	}
+	
+	.privileges{
+		width : 100%;
+		margin-left : -1em;
+	}
+	.special {
+		width : 80%;
+	}
+	.image_text{
+		padding : 1vw;
+	}
+	.image_text img{
+		width : -10em;
+	}
+	.options_text{
+		font-size : 1em;
+	}
+	
+}
